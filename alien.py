@@ -59,6 +59,7 @@ class Game:
     def check_play_button(self, mouse_pos):
         button_clicked = self.play_button.rect.collidepoint(mouse_pos)
         if button_clicked and not self.stats.game_active:
+
             self.settings.initialize_dynaimc_settings()
 
             self.stats.reset_stats()
